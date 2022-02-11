@@ -1,0 +1,405 @@
+/*
+ ***********************
+ *    IMPORT FONTS     *
+ ***********************
+*/
+
+@import url('../fonts/Roboto.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #3cc;
+}
+
+i {
+  margin-right: 10px;
+}
+
+::placeholder {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+#container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 50%;
+  /* background-color: indianred; */
+}
+
+.right {
+  width: 50vw;
+  /* background-color: wheat; */
+}
+
+.dontshow {
+  display: none;
+}
+
+/* CENTRAL CONTAINER WAVE CAFE */
+.menucontainerwavecafe {
+  margin-left: 20px;
+  max-width: 500px;
+}
+.tabs li {
+  cursor: pointer;
+}
+
+/* BANNER WAVE CAFE */
+.wavecafe {
+  width: 500px;
+  height: 160px;
+  background-color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #099;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.gap-between-wavecafe-and-tabs {
+  margin-top: 20px;
+}
+
+/* TABS WAVE CAFE */
+
+.tabs {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.tabs li {
+  width: 240px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #099;
+}
+.tabs li:hover {
+  background-color: #099;
+  color: white;
+}
+.active {
+  background-color: #099 !important;
+  color: white !important;
+}
+
+.tabs a {
+  text-decoration: none !important;
+}
+
+/* DRINK MENU */
+
+.tabsdrinkmenu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 660px;
+  padding: 25px;
+}
+
+.tabsdrinkmenu input[type='radio'] {
+  display: none;
+}
+
+.tabsdrinkmenu label {
+  width: 33%;
+  text-align: center;
+  padding: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  color: white;
+}
+
+/* to tab pairnei idiotites mono otan o pateras einai tabsdrinkmenu */
+.tabsdrinkmenu > .tabcontent {
+  width: 100%;
+  padding-top: 20px;
+  order: 1;
+  display: none;
+}
+
+/* opoio einai tsek deikse to */
+.tabsdrinkmenu input[type='radio']:checked + label + .tabcontent {
+  display: block;
+}
+
+.underline-on-hover:hover {
+  text-decoration: none;
+
+  color: #96feff;
+}
+.underline-on-hover::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  background: #4dcdf5;
+}
+.underline-on-hover {
+  text-align: center;
+  position: relative;
+}
+
+.underline-on-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.times {
+  color: #96feff;
+  float: right;
+}
+.rowdrinkmenu {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.rowdrinkmenu li {
+  width: 100%;
+  display: flex;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.menu {
+  padding: 20px 25px;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.menu p {
+  font-size: 18px;
+  line-height: 1.8;
+  padding-top: 0.5em;
+}
+
+/* TELOS DRINK MENU */
+
+.namesofdrinks {
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+/* ORFIUM */
+
+.orfium {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: 2px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+/* ABOUT */
+
+.blackbox_about_1 {
+  padding: 40px 30px 50px 0;
+  max-width: 660px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.blackbox_about_2 {
+  padding: 40px 30px 50px 0px;
+  max-width: 660px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.image_about_1 {
+  height: 200px;
+  width: 200px;
+  margin-right: 25px;
+}
+.image_about_2 {
+  display: flex;
+  gap: 10px;
+  float: right;
+  padding-left: 20px;
+}
+
+.title_about_1 {
+  margin-left: 220px;
+  font-size: bold;
+  color: #3cc;
+}
+
+.paragraph_about_1 {
+  color: white;
+}
+
+.paragraph_about_2 {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  color: white;
+  text-align: left;
+}
+
+.container_about_1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container_about_2 {
+  margin-top: 20px;
+}
+
+/* SPECIAL ITEMS */
+
+.flex_container_special_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px -10px 0;
+  max-width: 660px;
+}
+
+.boxspecialitems {
+  max-width: 320px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.titlespecialitems {
+  padding: 25px 30px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 0;
+  color: white;
+}
+
+/* PREPEI NA TO DIORTHWSW STO TELOS MAZI ME H2 */
+.titlespecialitems > h2 {
+  font-size: 1.4rem;
+}
+
+/* CONTACT */
+
+.containercontact {
+  max-width: 660px;
+}
+
+.blackbox_contact {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 45px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.form {
+  max-width: 460px;
+  padding: 40px 50px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.forminput {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 25px;
+}
+
+.forminputtextarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+.formbutton {
+  color: #099;
+  background-color: white;
+  border: 0;
+  padding: 12px 40px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin-left: auto;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#myBtn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  position: fixed;
+  float: right;
+  bottom: 30px;
+  right: 30px;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* .fa-play {
+  display: none;
+} */
