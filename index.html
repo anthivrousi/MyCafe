@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head itemscope itemtype="http://schema.org/WebSite">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Anthi Orfium</title>
+
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+  <meta itemprop="name" content="Project" />
+  <meta itemprop="description" content="Content description less than 200 characters" />
+  <meta itemprop="image" content="http://yourawesomeproject.com/image.jpg" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Project" />
+
+  <meta property="og:url" content="http://yourawesomeproject.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Your Next Awesome Project" />
+  <meta property="og:image" content="http://yourawesomeproject.com/image.jpg" />
+  <meta property="og:description" content="Description Here" />
+  <meta property="og:site_name" content="Site Name" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@site_account" />
+  <meta name="twitter:creator" content="@individual_account" />
+  <meta name="twitter:url" content="http://yourawesomeproject.com" />
+  <meta name="twitter:title" content="Project" />
+  <meta name="twitter:description" content="Content description less than 200 characters" />
+  <meta name="twitter:image" content="http://yourawesomeproject.com/image.jpg" />
+
+  <link href="https://plus.google.com/+YourPage" rel="publisher" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="alternate" hreflang="en" href="http://yourawesomeproject.com/en" />
+  <link type="text/plain" rel="author" href="humans.txt" />
+  <link rel="stylesheet" href="./css/app.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <!--[if IE
+      ]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script
+     ><![endif]-->
+
+
+</head>
+
+<body>
+
+  <!-- VIDEO -->
+
+  <video autoplay muted loop id="myVideo">
+    <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- BUTTON -->
+  <div>
+    <i id="myBtn" onclick="myButtonpauseFunction()" class="fa fa-pause" aria-hidden="true"></i>
+  </div>
+
+  <div id="container">
+
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+      <div class="menucontainerwavecafe">
+
+        <!-- BANNER WAVE CAFE -->
+        <div class="wavecafe">
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+          Wave Cafe
+        </div>
+
+        <div class="gap-between-wavecafe-and-tabs">
+
+          <!-- CENTRAL TABS WAVE CAFE -->
+
+          <ul class="tabs">
+
+            <a href="#drinkmenu" onclick='myFunction("divdrinkmenu")'>
+              <li class="active"><i class="fa fa-bars" aria-hidden="true"></i>
+                Drink Menu</li>
+            </a>
+
+            <a href="#aboutus" onclick='myFunction("divaboutus")'>
+              <li><i class="fa fa-users" aria-hidden="true"></i>
+                About Us</li>
+            </a>
+
+            <a href="#specialitems" onclick='myFunction("divspecialitems")'>
+              <li><i class="fa fa-glass" aria-hidden="true"></i>
+                Special Items</li>
+            </a>
+
+            <a href="#contact" onclick='myFunction("divcontact")'>
+              <li><i class="fa fa-comments" aria-hidden="true"></i>
+                Contact</li>
+            </a>
+
+          </ul>
+
+          <!-- <script src="app.js"></script> -->
+
+
+          <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+          <script type="text/javascript">
+            $(document).on('click', 'ul li', function () {
+              $(this).addClass('active').siblings().removeClass('active')
+            })
+          </script> -->
+        </div>
+      </div>
+
+      <!-- ORFIUM -->
+      <!-- 
+     <div class="orfium">Copyright 2021 Orfium</div> -->
+    </div>
+
+    <!-- RIGHT SIDE!!  -->
+
+    <div class="right">
+
+      <!-- CONTACT -->
+      <div id="divcontact" class="dontshow">
+
+
+        <div class="containercontact">
+
+          <div class="blackbox_contact">
+            <h2>Contact Wave</h2>
+            <p>ed ut perspiciatis unde omnis iste error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+
+          <div class="form">
+
+            <form>
+              <input class="forminput" type="text" placeholder="Name">
+              <input class="forminput" type="email" placeholder="Email">
+              <textarea rows='6' class="forminputtextarea" type="text" placeholder="Message"></textarea>
+              <button class="formbutton" type="submit">Submit</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SPECIAL ITEMS -->
+      <div id="divspecialitems" class="dontshow">
+        <div class="flex_container_special_items">
+
+
+          <div class="boxspecialitems">
+            <div>
+              <img src="images/special-01.jpg" alt="special-one">
+            </div>
+            <div class="titlespecialitems">
+              <h2>Special One</h2>
+              <p>Here is a short text description for the first special item. You are not allowed to redistribute this
+                template ZIP file.</p>
+            </div>
+          </div>
+
+
+
+          <div class="boxspecialitems">
+            <div>
+              <img src="images/special-02.jpg" alt="seconditem">
+            </div>
+            <div class="titlespecialitems">
+              <h2>Second Item</h2>
+              <p>Pellentesque in ultrices mi, quis mollis null.Quisque sed commodo est, quis tincidunt nunc.</p>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="boxspecialitems">
+            <div>
+              <img src="images/special-03.jpg" alt="thirdspecialitem">
+            </div>
+            <div class="titlespecialitems">
+              <h2>Special Item</h2>
+              <p>Pellentesque in ultrices mi, quis mollis null.Quisque sed commodo est, quis tincidunt nunc.</p>
+            </div>
+          </div>
+
+
+          <div class="boxspecialitems">
+            <div>
+              <img src="images/special-04.jpg" alt="specialitemfourth">
+            </div>
+            <div class="titlespecialitems">
+              <h2>Special Item Fourth</h2>
+              <p>Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam.Mauris fermentum.</p>
+            </div>
+          </div>
+
+
+          <div class="boxspecialitems">
+            <div>
+              <img src="images/special-05.jpg" alt="sixsense">
+            </div>
+            <div class="titlespecialitems">
+              <h2>Six Sense</h2>
+              <p>Here is a short text description for sixth item.This text is for lines.</p>
+            </div>
+          </div>
+
+
+          <div class="boxspecialitems">
+            <div>
+              <img src="images/special-06.jpg" alt="seventhitem">
+            </div>
+            <div class="titlespecialitems">
+              <h2>Seventh Item</h2>
+              <p>Curabitur eget erat sit amet sapien aliquet vulpurate quis sed arcu.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- END SPECIAL ITEMS -->
+
+
+      <!-- ABOUT US -->
+
+      <div id=divaboutus class="dontshow">
+        <div class="flex_container_about_1">
+
+          <div class="blackbox_about_1">
+
+
+            <div class="title_about_1">
+              <h2>About Wave Cafe</h2>
+            </div>
+
+            <div class="container_about_1">
+              <div>
+                <img class="image_about_1" src="images/about-1.png" alt="image_about_1">
+              </div>
+
+
+              <div class="paragraph_about_1">
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                  fugit, sed quia consequuntur magni dolores
+                  eos qui ratione voluptatem sequi nesciunt.</p>
+                <br />
+                <p>neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur
+                  adipisci[ng] velit, sedquia
+                  non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat
+                  voluptatem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="blackbox_about_2">
+
+
+            <div class="container_about_2">
+              <div>
+                <img class="image_about_2" src="images/about-2.png" alt="image_about_2">
+              </div>
+
+              <div class="paragraph_about_2">
+                <h2>How we began</h2><br />
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                  fugit, sed quia consequuntur magni dolores
+                  eos qui ratione voluptatem sequi nesciunt.
+                  amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam
+                  aliquam
+                  quaerat voluptatem.</p>
+                <br />
+                <p>neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit,
+                  sed
+                  quia
+                  non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat
+                  voluptatem.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- END ABOUT US -->
+
+
+      <!-- DRINK MENU-->
+      <div id="divdrinkmenu" class="dontshow">
+        <div class="tabsdrinkmenu">
+
+          <!-- ICED DRINKS -->
+          <input type="radio" id="icedcoffee" name="mytabss" checked="checked">
+          <label for="icedcoffee"><span class="underline-on-hover">Iced Coffee</span></label>
+
+          <div class="tabcontent">
+
+            <ul class="rowdrinkmenu">
+
+              <li>
+                <div>
+
+                  <img src="/images/iced-americano.png" alt="iced-americano">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Iced Americano <span class="times">$10.25</span></div>
+                  </p>
+                  <p>Here is a short description for the first item.You can change it to anything you want.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="images/iced-cappuccino.png" alt="iced-cappucino">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Iced Cappuccino <span class="times">$12.50</span></div>
+                  </p>
+                  <p>Here is a list of 4 items or add more.You can add list of ingredients.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="images/iced-espresso.png" alt="iced-espresso">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Iced Espresso <span class="times">$14.25</span></div>
+                  </p>
+                  <p>You are not permitted to redistribute this.</p>
+                </div>
+              </li>
+
+
+              <li>
+                <div>
+                  <img src="images/iced-latte.png" alt="iced-latte">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Iced Latte <span class="times">$11.50</span></div>
+                  </p>
+                  <p>Contents are organized into 3 tabs.Something Sonething and more words.</p>
+                </div>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+
+          <!-- HOT DRINKS -->
+          <input type="radio" id="hotcoffee" name="mytabss">
+          <label for="hotcoffee"><span class="underline-on-hover">Hot Coffee</span></label>
+
+          <div class="tabcontent">
+
+            <ul class="rowdrinkmenu">
+
+              <li>
+                <div>
+                  <img src="images/hot-americano.png" alt="hot-americano">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks"> Hot Americanο<span class="times">$8.50</span>
+                  </div>
+                  </p>
+                  <p>Here is a short description for the item along with a squared thumbnail.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="images/hot-cappuccino.png" alt="hot-cappuccino">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Hot Cappuccino <span class="times">$9.50</span></div>
+                  </p>
+                  <p>Here is a list of 4 items or add more.You can add list of ingredients.</p>
+                </div>
+              </li>
+
+              <li>
+                <img src="images/hot-espresso.png" alt="hot-espresso">
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Hot Espresso <span class="times">$7.50</span></div>
+                  </p>
+                  <p>Left side logo and main menu are fixed.The video background is fixed.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="images/hot-latte.png" alt="hot-latte">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Hot Latte <span class="times">$6.50</span></div>
+                  </p>
+                  <p>Page contents are organized into 3 tabs to show different lists of items.</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <!-- FRUIT JUICE -->
+          <input type="radio" id="fruitjuice" name="mytabss">
+          <label for="fruitjuice"><span class="underline-on-hover">Fruit Juice</span></label>
+
+          <div class="tabcontent">
+            <ul class="rowdrinkmenu">
+
+              <li>
+                <div>
+                  <img src="images/smoothie-1.png" name="StrawberrySmothie">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Strawberry Smoothie <span class="times">$12.50</span></div>
+                  </p>
+                  <p>Here is a short description for the item along with a squared thumbnail.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="images/smoothie-2.png" name="RedBerrySmothie">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Red Berry Smoothie <span class="times">$14.50</span></div>
+                  </p>
+                  <p>Here is a list of 4 items or add more.You can use this template for commercial purposes.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="images/smoothie-3.png" name="PineappleSmothie">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Pineapple Smoothie <span class="times">$16.50</span></div>
+                  </p>
+                  <p>Left side logo and main menu are fixed. The video background is fixed.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="images/smoothie-4.png" name="SpinachSmothie">
+                </div>
+                <div class="menu">
+                  <p>
+                  <div class="namesofdrinks">Spinach Smoothie <span class="times">$18.50</span></div>
+                  </p>
+                  <p>You are not allowed to redistribute the template ZIP file or other template sites.</p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- END DRINK MENU -->
+
+      <!--
+
+                      <i class="fa fa-pause" aria-hidden="true"></i> -->
+
+
+    </div>
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    // PRWTOS TROPOS NA ALLAZEI SELIDA
+
+    // document.getElementById('divdrinkmenu').classList.remove("dontshow");
+
+    // function myFunction(datapouthaparw) {
+
+    //   if (datapouthaparw == "drinkmenu") {
+    //     document.getElementById('divaboutus').classList.add("dontshow");
+    //     document.getElementById('divspecialitems').classList.add("dontshow");
+    //     document.getElementById('divcontact').classList.add("dontshow");
+    //     document.getElementById('divdrinkmenu').classList.remove("dontshow");
+
+
+    //   } else if (datapouthaparw == "aboutus") {
+    //     document.getElementById('divdrinkmenu').classList.add("dontshow");
+    //     document.getElementById('divspecialitems').classList.add("dontshow");
+    //     document.getElementById('divcontact').classList.add("dontshow");
+    //     document.getElementById('divaboutus').classList.remove("dontshow");
+
+
+    //   } else if (datapouthaparw == "specialitems") {
+    //     document.getElementById('divdrinkmenu').classList.add("dontshow");
+    //     document.getElementById('divaboutus').classList.add("dontshow");
+    //     document.getElementById('divcontact').classList.add("dontshow");
+    //     document.getElementById('divspecialitems').classList.remove("dontshow");
+
+
+    //   } else if (datapouthaparw == "contact") {
+    //     document.getElementById('divdrinkmenu').classList.add("dontshow");
+    //     document.getElementById('divaboutus').classList.add("dontshow");
+    //     document.getElementById('divspecialitems').classList.add("dontshow");
+    //     document.getElementById('divcontact').classList.remove("dontshow");
+    //   }
+    // }
+
+
+    // DEUTEROS TROPOS NA ALLAZEI SELIDA
+
+    document.getElementById('divdrinkmenu').classList.remove("dontshow");
+
+    function myFunction(datapouthaparw) {
+
+      var a = document.getElementById('divdrinkmenu');
+      var b = document.getElementById('divaboutus');
+      var c = document.getElementById('divspecialitems');
+      var d = document.getElementById('divcontact');
+
+      let ourarray = [a, b, c, d];
+      for (var i = 0; i < ourarray.length; i++) {
+        ourarray[i].classList.add("dontshow");
+      }
+
+      document.getElementById(datapouthaparw).classList.remove("dontshow");
+
+    }
+
+
+    // VIDEO KAI BUUTON PAUSE
+
+    var video = document.getElementById("myVideo");
+    function myButtonpauseFunction() {
+      if (video.paused) {
+        video.play();
+        document.getElementById('myBtn').classList.remove("fa-play");
+        document.getElementById('myBtn').classList.add("fa-pause");
+
+      } else {
+        video.pause();
+        document.getElementById('myBtn').classList.add("fa-play");
+        document.getElementById('myBtn').classList.remove("fa-pause");
+      }
+    }
+
+  </script>
+
+
+
+
+  <!-- Do not touch this ! ! ! -->
+  <script type="text/javascript" src="../build/app.js"></script>
+
+</body>
+
+</html>
